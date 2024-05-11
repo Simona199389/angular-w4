@@ -1,0 +1,83 @@
+<div class="traffic-lights-container">
+  <div class="traffic-light-horizontal">
+    <section class="h-100">
+      <header class="container h-100">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="d-flex flex-row">
+            <div class="container">
+              <div class="traffic-light">
+                <span class="lamp" *ngFor="let color of ['red', 'yellow', 'green']" [ngClass]="color"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+  </div>
+  <div class="hello">
+    <div class="traffic-lights-container">
+      <div class="traffic-lights-vertical">
+        <section class="h-100">
+          <header class="container h-100">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <div class="d-flex flex-column">
+                <div class="container">
+                  <div class="traffic-light">
+                    <span
+                      class="lamp"
+                      *ngFor="let color of ['red', 'yellow', 'green']"
+                      [ngClass]="color"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </section>
+      </div>
+    </div>
+  
+    <div class="traffic-lights-container">
+      <div class="traffic-lights-vertical">
+        <section class="h-100">
+          <header class="container h-100">
+            <div
+              class="d-flex align-items-center justify-content-center h-100"
+            >
+              <div class="d-flex flex-column">
+                <div class="container">
+                  <div class="traffic-light">
+                    <span
+                      class="lamp"
+                      *ngFor="let color of ['red', 'yellow', 'green']"
+                      [ngClass]="color"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="traffic-light-horizontal">
+    <section class="h-100">
+      <header class="container h-100">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="d-flex flex-row">
+            <div class="container">
+              <div class="traffic-light">
+                <span class="lamp" *ngFor="let color of ['red', 'yellow', 'green']" [ngClass]="color"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+  </div>
+</div>
+
+

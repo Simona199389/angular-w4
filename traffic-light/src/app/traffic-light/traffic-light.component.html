@@ -1,0 +1,33 @@
+<div class="container">
+  <!-- <button
+    class="buttonHorizontal"
+    [disabled]="isRed"
+    (click)="handleButtonClick()"
+  >
+    пресечи
+  </button>     -->
+  <div class="traffic-light">
+      <section class="h-100">
+        <header class="container h-100">
+          <div class="d-flex align-items-center justify-content-center h-100">
+            <div class="d-flex flex-row">
+              <div class="container">
+                <div class="traffic-light-lamps">
+                  <span
+                    class="lamp"
+                    *ngFor="let color of trafficLightColors; let i = index"
+                    [ngClass]="{
+                      red: i === 0,
+                      yellow: i === 1,
+                      green: i === 2,
+                      off: i !== currentColorIndex
+                    }"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </section>
+    </div>
+  </div>

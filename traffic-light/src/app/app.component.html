@@ -1,0 +1,53 @@
+<div class="horizontal-container">
+  <button
+    class="buttonHorizontal"
+    [disabled]="isRed"
+    (click)="handleButtonClick()"
+    style="position: absolute; left: calc(34%);"
+  >
+    пресечи
+  </button>
+  <traffic-light [inputState]="currentColorIndex"></traffic-light>
+  <button
+    class="buttonHorizontal"
+    [disabled]="isRed"
+    (click)="handleButtonClick()"
+    style="position: absolute; left: calc(72.5%);"
+  >
+    пресечи
+  </button>
+</div>
+
+<div class="vertical-container">
+  <traffic-light
+    class="vertical-traffic-light"
+    [inputState]="currentColorIndexV"
+  ></traffic-light>
+  <button class="warning" (click)="handleEmergency()" [disabled]="isWarned">
+    АВАРИЯ
+  </button>
+  <traffic-light
+    class="vertical-traffic-light"
+    [inputState]="currentColorIndexV"
+  ></traffic-light>
+</div>
+
+<div class="horizontal-container">
+  <button
+    class="buttonHorizontal"
+    [disabled]="isRed"
+    (click)="handleButtonClick()"
+    style="position: absolute; left: calc(19%);"
+  >
+    пресечи
+  </button>
+  <traffic-light [inputState]="currentColorIndex"></traffic-light>
+  <button
+    class="buttonHorizontal"
+    [disabled]="isRed"
+    (click)="handleButtonClick()"
+    style="position: absolute; left: calc(60%);"
+  >
+    пресечи
+  </button>
+</div>

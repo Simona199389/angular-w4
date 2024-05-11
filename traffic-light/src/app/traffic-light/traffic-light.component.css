@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+  }
+  
+  .traffic-light {
+    margin-top: 20px;
+    width: 180px;
+    background-color: black;
+  }
+  
+  .traffic-light-lamps {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .lamp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  .off{
+    background-color: grey;
+  }
+  button{
+    cursor: pointer;
+  }
+  .warning{
+    height: fit-content;
+  }
+  
+  
